@@ -25,14 +25,14 @@ const Customers = () => {
         allowPaging
         allowSorting
         toolbar={["Delete"]}
-        editSettings={{ allowEditing: true, allowDeleting: true }}
+        editSettings={{ allowDeleting: true, allowEditing: true }}
       >
         <ColumnsDirective>
           {customersGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
-        <Inject services={[Page, Selection, Edit, Toolbar, Sort, Filter]} />
+        <Inject services={[Page, Selection, Toolbar, Edit, Sort, Filter]} />
       </GridComponent>
     </div>
   );
