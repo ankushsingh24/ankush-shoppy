@@ -34,7 +34,7 @@ const Bar = () => {
         legendSettings={{ background: "white" }}
       >
         <Inject
-          services={[Legend, Category, Tooltip, ColumnSeries, DataLabel]}
+          services={[ColumnSeries, Legend, Tooltip, Category, DataLabel]}
         />
         <SeriesCollectionDirective>
           {barCustomSeries.map((item, index) => (
