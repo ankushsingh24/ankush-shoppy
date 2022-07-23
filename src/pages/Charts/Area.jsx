@@ -34,7 +34,7 @@ const Area = () => {
         background={currentMode === "Dark" ? "#33373E" : "#fff"}
         legendSettings={{ background: "white" }}
       >
-        <Inject services={[Legend, DateTime, SplineAreaSeries]} />
+        <Inject services={[SplineAreaSeries, DateTime, Legend]} />
         <SeriesCollectionDirective>
           {areaCustomSeries.map((item, index) => (
             <SeriesDirective key={index} {...item} />
