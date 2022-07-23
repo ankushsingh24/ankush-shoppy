@@ -5,7 +5,7 @@ const StateContext = createContext();
 const initialState = {
   chat: false,
   cart: false,
-  useProfile: false,
+  userProfile: false,
   notification: false,
 };
 
@@ -20,13 +20,13 @@ export const ContextProvider = ({ children }) => {
   const setMode = (e) => {
     setCurrentMode(e.target.value);
     localStorage.setItem("themeMode", e.target.value);
-    setThemeSettings(false);
+    // setThemeSettings(false);
   };
 
   const setColor = (color) => {
     setCurrentColor(color);
     localStorage.setItem("colorMode", color);
-    setThemeSettings(false);
+    // setThemeSettings(false);
   };
 
   const handleClick = (clicked) => {
@@ -48,6 +48,7 @@ export const ContextProvider = ({ children }) => {
         currentMode,
         setCurrentMode,
         themeSettings,
+        setThemeSettings,
         setMode,
         setColor,
         initialState,
