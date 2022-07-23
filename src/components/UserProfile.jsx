@@ -4,7 +4,7 @@ import { MdOutlineCancel } from "react-icons/md";
 import { Button } from ".";
 import { userProfileData } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
-import avatar from "../data/avatar.jpg";
+import avatar from "../data/self.jpg";
 
 const UserProfile = () => {
   const { currentColor } = useStateContext();
@@ -30,7 +30,7 @@ const UserProfile = () => {
         <div>
           <p className="font-semibold text-xl dark:text-gray-200">
             {" "}
-            Michael Roberts{" "}
+            Ankush Kr Singh{" "}
           </p>
           <p className="text-gray-500 text-sm dark:text-gray-400">
             {" "}
@@ -38,7 +38,7 @@ const UserProfile = () => {
           </p>
           <p className="text-gray-500 text-sm font-semibold dark:text-gray-400">
             {" "}
-            info@shop.com{" "}
+            ankush@shop.com{" "}
           </p>
         </div>
       </div>
